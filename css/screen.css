@@ -1,0 +1,56 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+html, body { height: 100%; width: 100%; background: #ecf0f1; overflow-x: hidden; font-family: Roboto, sans-serif; }
+
+* { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
+
+h1 { font-size: 26px; background: #009688; color: #efefef; padding: 40px 0 40px 20%; margin-bottom: 50px; }
+
+body > div { display: inline-flex; flex-direction: row; flex-wrap: wrap; width: 60%; margin-left: 20%; margin-bottom: 30px; background: white; padding: 20px; border-radius: 2px; box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2); }
+body > div:last-of-type { margin-bottom: 100px; }
+
+h2 { color: #009688; font-weight: 500; font-size: 1.75rem; margin-bottom: 1.75rem; }
+
+p { display: inline; margin-right: 50px; }
+
+.timerWrap, .timesWrap, .buttonWrap { justify-content: center; }
+
+#flowTimer { font-size: 3.75rem; margin-bottom: 0; }
+
+a { text-decoration: none; color: coral; }
+
+input[type="radio"] { display: none; }
+
+.timesWrap label { background-color: #efefef; border: 1px solid #eee; margin: 0 .5rem 0 .5rem; color: #999; padding: 1rem 2rem; box-shadow: #ccc 0 1px 1px; }
+
+.timesWrap input[type="radio"]:checked + label { background-color: #fff; color: black; border: 1px solid #009688; box-shadow: 0px 0px 9px #0fa0bd; }
+
+input[type="number"] { padding: 1rem; border: none; border-bottom: solid 2px #c9c9c9; transition: border 0.3s; width: 4.5em; }
+
+input[type="number"]:focus { border-bottom: solid 2px #969696; }
+
+.animate { transition: all 0.1s; }
+
+#go { padding: 2rem 4rem; color: white; font-size: 1.75rem; border-radius: 10px; text-decoration: none; background-color: #3498DB; border-bottom: 5px solid #2980B9; text-shadow: 0px -2px #2980B9; }
+
+.action-button:active { transform: translate(0px, 5px); border-bottom: 1px solid; }
+
+footer { display: block; text-align: right; margin-right: 4rem; margin-bottom: 4rem; }

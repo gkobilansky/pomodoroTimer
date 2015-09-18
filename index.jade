@@ -1,0 +1,46 @@
+doctype html
+html(class='no-js')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+    title="Flow Timer"
+
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/screen.css')
+    link(rel='stylesheet', href='css/print.css')
+    link(rel='stylesheet', href='css/ie.css')
+  body
+    h1 Flow Timer
+    div 
+      p Hello! I am an easy, <a href="https://www.wikiwand.com/en/Pomodoro_Technique">proven</a> and customizable productivity timer. Stay in <a href="https://flowathletics.com/what-is-flow/">flow</a>, no matter what you're working on.
+    .timesWrap     
+       input(type="radio" id="tab-1" name="timer" checked)
+       label(for="tab-1") work time
+        input(type="number" name="work" value="25" size="2")
+       input(type="radio" id="tab-2" name="timer")
+       label(for="tab-2") short break time
+         input(type="number" name="short" value="5" size="2")
+       input(type="radio" id="tab-3" name="timer")
+       label(for="tab-3") long break time
+         input(type="number" name="long" value="15" size="2")
+    .timerWrap
+        h2#flowTimer
+    .buttonWrap
+        a(href="#").action-button.animate#go Let's Flow!
+    .detailsWrap
+        h2 Why no pause button? 
+        p This is on purpose. There is no pause in <a href="http://flowathletics.com/what-is-flow">flow</a>, once you're out, you're out. Stay concentrated for 25 minutes (or more), no distractions!        
+    footer
+       p 
+        | by 
+        a(href="http://lancekey.com") Lancekey 
+        | for 
+        a(href="http://flowathletics.com") Flow Athletics
+        |  - 2015. All Movie Rights Reserved
+    script(src='/js/min/timer-min.js')
+    script(src='/js/min/kickoff-min.js') 
+    
