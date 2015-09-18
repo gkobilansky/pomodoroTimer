@@ -17,16 +17,16 @@
       <p>Hello! I am an easy, <a href="https://www.wikiwand.com/en/Pomodoro_Technique">proven</a> and customizable productivity timer. Stay in <a href="https://flowathletics.com/what-is-flow/">flow</a>, no matter what you're working on.</p>
     </div>
     <div class="timesWrap">    
-      <input type="radio" id="tab-1" name="timer" checked>
-      <label for="tab-1">work time
+      <input type="radio" id="work" name="timer" checked>
+      <label for="work">work time
         <input type="number" name="work" value="25" size="2">
       </label>
-      <input type="radio" id="tab-2" name="timer">
-      <label for="tab-2">short break time
+      <input type="radio" id="short" name="timer">
+      <label for="short">short break time
         <input type="number" name="short" value="5" size="2">
       </label>
-      <input type="radio" id="tab-3" name="timer">
-      <label for="tab-3">long break time
+      <input type="radio" id="long" name="timer">
+      <label for="long">long break time
         <input type="number" name="long" value="15" size="2">
       </label>
     </div>
@@ -41,10 +41,11 @@
     <footer>
       <p>
          
-        by <a href="http://lancekey.com">Lancekey </a>for <a href="http://flowathletics.com">Flow Athletics</a> - 2015. All Movie Rights Reserved
+        by <a href="http://lancekey.com">Lancekey </a>for <a href="http://flowathletics.com">Flow Athletics</a> - 2015. All Movie Rights Reserved 
       </p>
     </footer>
-    <script src="/js/min/timer-min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
     <script src="/js/min/kickoff-min.js"> </script>
   </body>
 </html>
