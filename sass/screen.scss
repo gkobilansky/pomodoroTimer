@@ -80,6 +80,7 @@ h2 {
     
 .timerWrap, .timesWrap, .buttonWrap {
     justify-content: center;
+    text-align: center;
 }
 #flowTimer {
     font-size: 3.75rem;
@@ -113,6 +114,7 @@ input[type="radio"] {
 		color: black;
 		border: 1px solid $teal;
 		box-shadow: 0px 0px 9px #0fa0bd;
+        z-index: 1;
 	}
 
 input[type="number"] {
