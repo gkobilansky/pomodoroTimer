@@ -1,6 +1,6 @@
   
 // twitter button	
-$('.tweet').on('click', function(e){
+$('#tweet').on('click', function(e){
     e.preventDefault();
     var loc = window.location.href;
     console.log(loc);
