@@ -1,4 +1,4 @@
-//$(function() {
+$(function() {
 var length;
 var whatFinished;    
 var workCount = 4; // bc 0%3 === 0
@@ -42,5 +42,5 @@ var switchTimer = function(){
 }};
     
     
-//});
+});
 
