@@ -35,7 +35,9 @@ html, body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {text-transform: uppercase;}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
 
 h1 {
   font-size: 26px;
@@ -56,16 +58,13 @@ body > div {
   padding: 20px;
   border-radius: 2px;
   box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
-  &:last-of-type {
-    margin-bottom: 100px;
-  }
 }
 
 h2 {
   color: $teal;
   font-weight: 500;
   font-size: 1.75rem;
-  margin-bottom: 1.75rem;
+  margin: 1.75rem 0 1.75rem 0;
 }
 
 p {
@@ -78,7 +77,7 @@ h2 {
    
 }
     
-.timerWrap, .timesWrap, .buttonWrap {
+.timerWrap, .timesWrap, .buttonWrap, .socialWrap {
     justify-content: center;
     text-align: center;
 }
@@ -157,6 +156,47 @@ input[type="number"]:focus {
 	transform: translate(0px,5px);
 	border-bottom: 1px solid;
 }
+
+// follow
+
+.socialWrap {
+ display: inline-flex;
+ width: 60%;
+ margin-left: 20%;
+ padding: 20px;
+}
+
+
+.tweet {
+  display: inherit;
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  background: #03A9F4;
+  margin-right: 3rem;
+  white-space: nowrap;
+  padding: 13px;
+  box-sizing: border-box;
+  color: $paper;
+  transition: all 0.2s ease;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
+  i {
+    margin-right: 20px;
+    transition: margin-right 0.2s ease;
+    color: white;
+  }
+  &:hover {
+    width: 100px;
+    transform: translateX(-30px);
+    cursor: pointer;
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
 
 // footer, obviously
 

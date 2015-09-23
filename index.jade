@@ -4,7 +4,7 @@ html(class='no-js')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
 
-    title="Flow Timer"
+    title='Flow Timer'
 
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -16,32 +16,41 @@ html(class='no-js')
   body
     h1 Flow Timer
     div 
-      p Hello! I am an easy, <a href="https://www.wikiwand.com/en/Pomodoro_Technique">proven</a> and customizable productivity timer. Stay in <a href="https://flowathletics.com/what-is-flow/">flow</a>, no matter what you're working on.
+      p Hello! I am an easy, <a href='https://www.wikiwand.com/en/Pomodoro_Technique'>proven</a> and customizable productivity timer. Stay in <a href='https://flowathletics.com/what-is-flow/'>flow</a>, no matter what you're working on.
     .timesWrap     
-       input(type="radio" id="work" name="timer" checked)
-       label(for="work") work time
-        input(type="number" name="work" value="25" size="2")
-       input(type="radio" id="short" name="timer")
-       label(for="short") short break time
-         input(type="number" name="short" value="5" size="2")
-       input(type="radio" id="long" name="timer")
-       label(for="long") long break time
-         input(type="number" name="long" value="15" size="2")
+       input(type='radio' id='work' name='timer' checked)
+       label(for='work') work time
+        input(type='number' name='work' value='25' size='2')
+       input(type='radio' id='short' name='timer')
+       label(for='short') short break time
+         input(type='number' name='short' value='5' size='2')
+       input(type='radio' id='long' name='timer')
+       label(for='long') long break time
+         input(type='number' name='long' value='15' size='2')
     .timerWrap
         h2#flowTimer
     .buttonWrap
-        a(href="#").action-button.animate#go Let's Flow!
+        a(href='#').action-button.animate#go Let's Flow!
     .detailsWrap
+        h2 How does this all work?
+        p This is a productivity timer. You start with a work sprint (traditionally 25 min), followed by short breaks. Once you've done 3 work sprints in a row, you can take a longer break. Nothing too complicated. It's often the simplest methods are the most effective.  
         h2 Why no pause button? 
-        p This is on purpose. There is no pause in <a href="http://flowathletics.com/what-is-flow">flow</a>, once you're out, you're out. Stay concentrated for 25 minutes (or more), no distractions!        
+        p This is on purpose. There is no pause in <a href='http://flowathletics.com/what-is-flow'>flow</a>, once you're out, you're out. Stay concentrated for 25 minutes (or more), no distractions!
+    span.socialWrap
+     a(class='tweet' title='Flow Timer by @gkobilansky' target='_blank') <i class='fa fa-twitter'></i> Share
+     a(class='tweet' href='https://github.com/gkobilansky/pomodoroTimer') <i class='fa fa-github'></i> Fork
     footer
        p 
         | by 
-        a(href="http://lancekey.com") Lancekey 
+        a(href='http://lancekey.com') Lancekey 
         | for 
-        a(href="http://flowathletics.com") Flow Athletics
+        a(href='http://flowathletics.com') Flow Athletics
         |  - 2015. All Movie Rights Reserved 
+    
+    link(rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,500,600,700' rel='stylesheet' type='text/css')
     script(src='/bower_components/jquery/dist/jquery.min.js')
     script(src='/bower_components/jquery.countdown/dist/jquery.countdown.min.js')
-    script(src='/js/min/kickoff-min.js') 
+    script(src='/js/min/kickoff-min.js')
+    script(src='/js/min/twitter-min.js')
     
