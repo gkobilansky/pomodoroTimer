@@ -1,5 +1,4 @@
 //$(function() {
-var display = $('#flowTimer');
 var length;
 var whatFinished;    
 var workCount = 4; // bc 0%3 === 0
@@ -7,6 +6,7 @@ var workCount = 4; // bc 0%3 === 0
 // Let's flow button sets length, kicks-off timer and assigns an .on finish.countdown event listener
     
 $('#go').on('click', function(e) {
+    var display = $('#flowTimer');
     e.preventDefault();
 
     length = new Date().getTime() + ($('input:checked').next().children().val() * 60 * 1000);
@@ -16,7 +16,7 @@ $('#go').on('click', function(e) {
     })
     
     .on('finish.countdown', function() {    
-        $(this).text('BZZZ');   
+        display.replaceWith( '<h2 id="flowTimer">BZZZ</h2>' );
         whatFinished = $( 'input:checked' ).prop( 'id' );
         switchTimer(); 
     });   
