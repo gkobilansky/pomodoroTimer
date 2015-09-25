@@ -1,7 +1,8 @@
+var workCount = 4; // bc 0%3 === 0
+
 $(function() {
 var length;
 var whatFinished;    
-var workCount = 4; // bc 0%3 === 0
 
 // Let's flow button sets length, kicks-off timer and assigns an .on finish.countdown event listener
     
