@@ -18,7 +18,8 @@ $('#go').on('click', function(e) {
     .on('finish.countdown', function() {    
         display.replaceWith( '<h2 id="flowTimer">BZZZ</h2>' );
         whatFinished = $( 'input:checked' ).prop( 'id' );
-        switchTimer(); 
+        switchTimer();
+        playSound();
     });   
   }); 
 
@@ -40,7 +41,6 @@ var switchTimer = function(){
           $("input").prop('checked', false); 
           $('#work').prop('checked', true);
 }};
-    
-    
+
 });
 
