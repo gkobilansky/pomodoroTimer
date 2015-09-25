@@ -19,7 +19,7 @@ $('#go').on('click', function(e) {
         display.replaceWith( '<h2 id="flowTimer">BZZZ</h2>' );
         whatFinished = $( 'input:checked' ).prop( 'id' );
         switchTimer();
-        playSound();
+        playSuccessSound();
     });   
   }); 
 
