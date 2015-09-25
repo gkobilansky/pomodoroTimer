@@ -12,11 +12,13 @@ $('#go').on('click', function(e) {
     length = new Date().getTime() + ($('input:checked').next().children().val() * 60 * 1000);
     
     display.countdown(length, function(event) {
-    $(this).html(event.strftime('%M:%S'));    
+    $(this).html(event.strftime('%M:%S'));
+    document.title = event.strftime('%M:%S');    
     })
     
     .on('finish.countdown', function() {    
         display.replaceWith( '<h2 id="flowTimer">BZZZ</h2>' );
+        document.title = "BZZZ";
         whatFinished = $( 'input:checked' ).prop( 'id' );
         switchTimer();
         playSuccessSound();
